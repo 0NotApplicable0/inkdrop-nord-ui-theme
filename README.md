@@ -1,7 +1,7 @@
 # Nord UI
 
-![Inkdrop Plugin Version](https://inkdrop-plugin-badge.vercel.app/api/version/nord-ui&style=for-the-badge)
-![Inkdrop Plugin Downloads](https://inkdrop-plugin-badge.vercel.app/api/downloads/nord-ui&style=for-the-badge)
+![Inkdrop Plugin Version](https://inkdrop-plugin-badge.vercel.app/api/version/nord-ui?style=for-the-badge)
+![Inkdrop Plugin Downloads](https://inkdrop-plugin-badge.vercel.app/api/downloads/nord-ui?style=for-the-badge)
 
 Nord UI theme for Inkdrop.
 
@@ -25,5 +25,5 @@ $ ipm install nord-preview
 
 ## Related
 
-* [choco14t/inkdrop-nord-syntax-theme](https://github.com/choco14t/inkdrop-nord-syntax-theme)
-* [choco14t/inkdrop-nord-preview-theme](https://github.com/choco14t/inkdrop-nord-preview-theme)
+- [choco14t/inkdrop-nord-syntax-theme](https://github.com/choco14t/inkdrop-nord-syntax-theme)
+- [choco14t/inkdrop-nord-preview-theme](https://github.com/choco14t/inkdrop-nord-preview-theme)
