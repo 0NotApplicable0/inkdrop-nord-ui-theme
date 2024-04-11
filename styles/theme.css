@@ -1630,10 +1630,6 @@ input::selection {
   /*-------------------
     Task Progress View
   --------------------*/
-  --task-progress-view-border-color: red;
-  --task-progress-view-background-color: rgba(0, 0, 0, 0.3);
-  --task-progress-view-foreground-color: rgba(255, 255, 255, 0.6);
-  --task-progress-view-completed-color: #A3BE8C;
 }
 /*!
  * # Semantic UI - Button

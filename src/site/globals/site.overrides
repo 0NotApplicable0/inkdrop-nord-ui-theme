@@ -1025,4 +1025,12 @@
   --task-icon-onhold: @taskIconOnHold;
   --task-icon-completed: @taskIconCompleted;
   --task-icon-dropped: @taskIconDropped;
+
+  /*-------------------
+    Task Progress View
+  --------------------*/
+  @taskProgressViewBorderColor: hsl(var(--hsl-gray-50) / 10%);
+  @taskProgressViewBackgroundColor: hsl(var(--hsl-gray-950) / 30%);
+  @taskProgressViewForegroundColor: hsl(var(--hsl-gray-50) / 60%);
+  @taskProgressViewCompletedColor: hsl(var(--hsl-green-500));
 }
