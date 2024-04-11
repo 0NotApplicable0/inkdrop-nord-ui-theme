@@ -4,7 +4,8 @@
   "theme": "ui",
   "description": "Nord UI Theme for Inkdrop",
   "styleSheets": [
-    "theme.min.css"
+    "theme.min.css",
+    "gfm-alerts.css"
   ],
   "scripts": {
     "start": "gulp",
