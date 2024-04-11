@@ -17,7 +17,14 @@
     "markdown"
   ],
   "author": "choco14t<chocoh14t@gmail.com>",
-  "repository": "https://github.com/choco14t/inkdrop-nord-ui-theme",
+  "contributors": [
+    {
+      "name": "0NotApplicable0",
+      "email": "nick@splitrock.dev",
+      "url": "https://splitrock.dev"
+    }
+  ],
+  "repository": "https://github.com/0NotApplicable0/inkdrop-nord-ui-theme",
   "license": "MIT",
   "devDependencies": {
     "better-console": "^1.0.1",
@@ -56,6 +63,6 @@
     "Electron 12.0.4"
   ],
   "engines": {
-    "inkdrop": "^5.x"
+    "inkdrop": "^5.8.X"
   }
 }
