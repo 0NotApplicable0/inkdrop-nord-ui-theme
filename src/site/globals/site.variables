@@ -1,7 +1,7 @@
 /*******************************
      User Global Variables
 *******************************/
-@fontPath  : 'inkdrop://default-light-ui/styles/themes/default/assets/fonts';
+@fontPath  : 'inkdrop://default-dark-ui/styles/themes/default/assets/fonts';
 @headerFont        : -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 @pageFont          : -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 @importGoogleFonts : false;
@@ -11,13 +11,14 @@
 @primaryColorFocus: @nord7;
 @linkHoverColor: @primaryColor;
 
-
 /*-------------------
       Side Bar
 --------------------*/
 @sidebarBackground     : @pageBackground;
-@sidebarMenuItemActiveBackground: rgba(0, 0, 0, 0.2);
+@sidebarMenuItemActiveBackground: hsl(var(--hsl-slate-500) / 40%);
+@sidebarMenuItemInactiveBackground: rgba(0, 0, 0, 0.2);
 @sidebarMenuSectionColor: @lightTextColor;
+@sidebarMenuSectionSeparatorColor: rgba(255,255,255,0.1);
 @sidebarMenuItemColor  : @textColor;
 @sidebarMenuActionColor : @lightTextColor;
 @sidebarMenuActionHoverColor : @primaryColorFocus;
@@ -46,15 +47,21 @@
 @noteListViewItemSeparatorBorder: 1px solid @nord3;
 @noteListViewItemDateColor: @primaryColor;
 @noteListViewItemTagColor: @primaryColor;
-@noteListViewItemActiveBackground: @primaryColor;
+@noteListViewItemInactiveBackground: #6987AF30;
+@noteListViewItemActiveBackground: #6987AF60;
 @noteListViewItemActiveColor: @textColor;
 @noteListViewItemActiveDateColor: @textColor;
 @noteListViewItemActiveTagColor: @textColor;
-@noteListViewItemFocusInnerShadow: inset 0 0 4px rgba(0,0,0,0.8);
+@noteListViewItemFocusInnerShadow: none;
 @noteSearchBarBackground: @noteListBarBackground;
 @noteSearchBarBorderBottom: 1px solid @white;
-@noteSearchBarInputBorder: none;
+@noteSearchBarInputBorder: 1px solid transparent;
 @noteSearchBarInputBackground: @inputBackground;
+
+/*-------------------
+      Editor
+--------------------*/
+@editorBackground: @pageBackground;
 
 /*-------------------
       Header Note Menu
