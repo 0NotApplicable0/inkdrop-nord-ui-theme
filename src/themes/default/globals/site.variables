@@ -21,7 +21,7 @@
 @googleFontRequest : '@{googleFontName}:@{googleFontSizes}&subset=@{googleSubset}';
 
 
-@bold              : bold;
+@bold              : 600;
 @normal            : normal;
 
 /*-------------------
@@ -42,8 +42,8 @@
 /* See Power-user section below
    for explanation of @px variables
 */
-@relativeBorderRadius: @relative4px;
-@absoluteBorderRadius: @4px;
+@relativeBorderRadius: @relative5px;
+@absoluteBorderRadius: @5px;
 
 @defaultBorderRadius: @absoluteBorderRadius;
 
@@ -51,7 +51,7 @@
     Brand Colors
 --------------------*/
 
-@primaryColor        : @blue;
+@primaryColor        : #6987AF;
 @secondaryColor      : @black;
 
 @lightPrimaryColor   : @lightBlue;
@@ -97,6 +97,17 @@
 
 /* Used on dropdowns, other larger blocks */
 @focusedFormMutedBorderColor: #96C8DA;
+
+@unfocusedOutlineColor      : transparent;
+@unfocusedOutlineOffset     : 0.4rem;
+@focusedOutlineStyle        : solid;
+@focusedOutlineWidth        : @2px;
+@focusedOutlineColor        : color-mix(
+  in srgb,
+  @focusedFormMutedBorderColor,
+  transparent 50%
+);
+@focusedOutlineOffset       : 0rem;
 
 /*-------------------
         Sizes
@@ -172,10 +183,10 @@
   Highlighted Text
 --------------------*/
 
-@highlightBackground      : #FFFFFF - #CCE2FF;
+@highlightBackground      : @primaryColor;
 @highlightColor           : @textColor;
 
-@inputHighlightBackground : #FFFFFF - rgba(100, 100, 100, 0.4);
+@inputHighlightBackground : @blue;
 @inputHighlightColor      : @textColor;
 
 
@@ -365,6 +376,7 @@
   0px 2px 4px 0px rgba(34, 36, 38, 0.12),
   0px 2px 10px 0px rgba(34, 36, 38, 0.15)
 ;
+@raisedShadow: 0px 2px 3px 0px @borderColor;
 
 /*******************************
            Power-User
@@ -398,7 +410,7 @@
 
 /* Warning */
 @warningColor           : #F2C037;
-@warningBorderColor     : #C9BA9B;
+@warningBorderColor     : #794B02;
 @warningBackgroundColor : #FFFAF3;
 @warningHeaderColor     : #794B02;
 @warningTextColor       : #573A08;
@@ -419,34 +431,43 @@
   This rounds @size values to the closest pixel then expresses that value in (r)em.
   This ensures all size values round to exact pixels
 */
-@mini            : unit( round(@miniSize * @emSize) / @emSize, rem);
-@tiny            : unit( round(@tinySize * @emSize) / @emSize, rem);
-@small           : unit( round(@smallSize * @emSize) / @emSize, rem);
-@medium          : unit( round(@mediumSize * @emSize) / @emSize, rem);
-@large           : unit( round(@largeSize * @emSize) / @emSize, rem);
-@big             : unit( round(@bigSize * @emSize) / @emSize, rem);
-@huge            : unit( round(@hugeSize * @emSize) / @emSize, rem);
-@massive         : unit( round(@massiveSize * @emSize) / @emSize, rem);
+@miniRaw         : unit( (round(@miniSize * @emSize) / @emSize ));
+@tinyRaw         : unit( (round(@tinySize * @emSize) / @emSize ));
+@smallRaw        : unit( (round(@smallSize * @emSize) / @emSize ));
+@mediumRaw       : unit( (round(@mediumSize * @emSize) / @emSize ));
+@largeRaw        : unit( (round(@largeSize * @emSize) / @emSize ));
+@bigRaw          : unit( (round(@bigSize * @emSize) / @emSize ));
+@hugeRaw         : unit( (round(@hugeSize * @emSize) / @emSize ));
+@massiveRaw      : unit( (round(@massiveSize * @emSize) / @emSize ));
+
+@mini            : unit( @miniRaw, rem);
+@tiny            : unit( @tinyRaw, rem);
+@small           : unit( @smallRaw, rem);
+@medium          : unit( @mediumRaw, rem);
+@large           : unit( @largeRaw, rem);
+@big             : unit( @bigRaw, rem);
+@huge            : unit( @hugeRaw, rem);
+@massive         : unit( @massiveRaw, rem);
 
 /* em */
-@relativeMini    : unit( round(@miniSize * @emSize) / @emSize, em);
-@relativeTiny    : unit( round(@tinySize * @emSize) / @emSize, em);
-@relativeSmall   : unit( round(@smallSize * @emSize) / @emSize, em);
-@relativeMedium  : unit( round(@mediumSize * @emSize) / @emSize, em);
-@relativeLarge   : unit( round(@largeSize * @emSize) / @emSize, em);
-@relativeBig     : unit( round(@bigSize * @emSize) / @emSize, em);
-@relativeHuge    : unit( round(@hugeSize * @emSize) / @emSize, em);
-@relativeMassive : unit( round(@massiveSize * @emSize) / @emSize, em);
+@relativeMini    : unit( @miniRaw, em);
+@relativeTiny    : unit( @tinyRaw, em);
+@relativeSmall   : unit( @smallRaw, em);
+@relativeMedium  : unit( @mediumRaw, em);
+@relativeLarge   : unit( @largeRaw, em);
+@relativeBig     : unit( @bigRaw, em);
+@relativeHuge    : unit( @hugeRaw, em);
+@relativeMassive : unit( @massiveRaw, em);
 
 /* rem */
-@absoluteMini    : unit( round(@miniSize * @emSize) / @emSize, rem);
-@absoluteTiny    : unit( round(@tinySize * @emSize) / @emSize, rem);
-@absoluteSmall   : unit( round(@smallSize * @emSize) / @emSize, rem);
-@absoluteMedium  : unit( round(@mediumSize * @emSize) / @emSize, rem);
-@absoluteLarge   : unit( round(@largeSize * @emSize) / @emSize, rem);
-@absoluteBig     : unit( round(@bigSize * @emSize) / @emSize, rem);
-@absoluteHuge    : unit( round(@hugeSize * @emSize) / @emSize, rem);
-@absoluteMassive : unit( round(@massiveSize * @emSize) / @emSize, rem);
+@absoluteMini    : unit( @miniRaw, rem);
+@absoluteTiny    : unit( @tinyRaw, rem);
+@absoluteSmall   : unit( @smallRaw, rem);
+@absoluteMedium  : unit( @mediumRaw, rem);
+@absoluteLarge   : unit( @largeRaw, rem);
+@absoluteBig     : unit( @bigRaw, rem);
+@absoluteHuge    : unit( @hugeRaw, rem);
+@absoluteMassive : unit( @massiveRaw, rem);
 
 /*-------------------
        Icons
@@ -504,9 +525,9 @@
 @strongSelectedBorderColor : rgba(24, 26, 28, 0.5);
 @disabledBorderColor       : rgba(24, 26, 28, 0.5);
 
-@solidInternalBorderColor  : #333333;
-@solidBorderColor          : #1B1C1E;
-@solidSelectedBorderColor  : #222222;
+@solidInternalBorderColor  : #222222;
+@solidBorderColor          : #3B3C3E;
+@solidSelectedBorderColor  : #4D5B66;
 
 @whiteBorderColor              : rgba(0, 0, 0, 0.1);
 @selectedWhiteBorderColor      : rgba(0, 0, 0, 0.8);
@@ -531,10 +552,10 @@
 
 /* Used to match floats with text */
 @lineHeightOffset       : ((@lineHeight - 1em) / 2);
-@headerLineHeightOffset : (@headerLineHeight - 1em) / 2;
+@headerLineHeightOffset : ((@headerLineHeight - 1em) / 2);
 
 /* Header Spacing */
-@headerTopMargin    : ~"calc(2rem - "@headerLineHeightOffset~")";
+@headerTopMargin    : e(%("calc(2rem - %d)", @headerLineHeightOffset));
 @headerBottomMargin : 1rem;
 @headerMargin       : @headerTopMargin 0em @headerBottomMargin;
 
