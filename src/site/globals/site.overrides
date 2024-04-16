@@ -1028,9 +1028,13 @@
 
   /*-------------------
     Task Progress View
-  --------------------*/
+  --------------------*/  
   @taskProgressViewBorderColor: hsl(var(--hsl-gray-50) / 10%);
   @taskProgressViewBackgroundColor: hsl(var(--hsl-gray-950) / 30%);
   @taskProgressViewForegroundColor: hsl(var(--hsl-gray-50) / 60%);
   @taskProgressViewCompletedColor: hsl(var(--hsl-green-500));
+  --task-progress-view-border-color: @taskProgressViewBorderColor;
+  --task-progress-view-background-color: @taskProgressViewBackgroundColor;
+  --task-progress-view-foreground-color: @taskProgressViewForegroundColor;
+  --task-progress-view-completed-color: @taskProgressViewCompletedColor;
 }
