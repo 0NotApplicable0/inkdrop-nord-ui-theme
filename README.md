@@ -25,8 +25,8 @@ $ ipm install nord-preview
 
 ## Related
 
-- [choco14t/inkdrop-nord-syntax-theme](https://github.com/choco14t/inkdrop-nord-syntax-theme)
-- [choco14t/inkdrop-nord-preview-theme](https://github.com/choco14t/inkdrop-nord-preview-theme)
+- [0NotApplicable0/inkdrop-nord-syntax-theme](https://github.com/0NotApplicable0/inkdrop-nord-syntax-theme)
+- [0NotApplicable0/inkdrop-nord-preview-theme](https://github.com/0NotApplicable0/inkdrop-nord-preview-theme)
 
 ---
 
