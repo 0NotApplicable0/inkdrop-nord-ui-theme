@@ -27,15 +27,3 @@ $ ipm install nord-preview
 
 - [0NotApplicable0/inkdrop-nord-syntax-theme](https://github.com/0NotApplicable0/inkdrop-nord-syntax-theme)
 - [0NotApplicable0/inkdrop-nord-preview-theme](https://github.com/0NotApplicable0/inkdrop-nord-preview-theme)
-
----
-
-## Which files to edit
-
-- `src/site/globals/site.variables`
-  - Variables for Inkdrop-specific components
-- `src/site/globals/site.overrides`
-  - Declarations of CSS variables
-- `src/themes/default/globals/site.variables`
-  - Common variables
-
